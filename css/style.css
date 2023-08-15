@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+  background-color: #320738;
+}
+
+#trailerButton{
+    background-color: #4384a7;
+}
+body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    display: block;
+    height: 100%;
+    width: 20%;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+
+nav button {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    gap: 20px;
+   
+   
+}
+
+
+/* .menu button:hover, .menu .peliculas {
+    color: #4384a7;
+} */
+
+.menu p {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#peliculas ,#pelisHistoria , #pelisComedia ,#pelisDocumental  , #seriesComedia ,#seriesAnimacion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.dropdown-menu{
+    width: 200px;
+    
+    
+}
+#h4Dramas , #h4Comedia  , #h4series ,#h4seriesAnima , #h4pelis ,#h4seriesComedia  {
+    margin-top: 100px;
+    color: 
+    #eee;
+}
+
+
+/* pelis */
+#img2 {
+    height: 300px;
+    width: 300px;
+}
+
+#divGeneral {
+    height: 100%;
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+#description {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    text-align: start;
+}
+
+main {
+    grid-column: 2/3;
+}
+
+button {
+    border: none;
+}
+
+#h4 {
+    color: #4384a7;
+    ;
+    font-size: 15px;
+    text-align: start;
+}
+
+#h4pelis , #h4Historia {
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.search i {
+    font-size: 20px;
+    color: #eee;
+    background: #121b24;
+   
+}
+
+.search {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background: #121b24;
+    width: 200px;
+    height: 2.5rem;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+   
+}
+
+input {
+    border: none;
+    padding: 10px;
+    color: #090909;
+    font-size: 17px;
+    background-color: #eee;
+}
+
+#leermas button:hover {
+    color: #ffffff;
+}
+
+
+#leermas {
+    color: #4384a7;
+}
+
+#div2 {
+    width: 300px;
+    display: flex;
+    gap: 5px;
+}
+
+/* series */
+#h4series {
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#series {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+#leermas2 button:hover {
+    color: #ffffff;
+}
+
+
+#leermas2 {
+    color: #4384a7;
+}
+
+/* busqueda */
+#resultados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Trailer */
+
+#buttonLook {
+    background-color: #4384a7;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    border-radius: 10px;
+}
+
+#h4Look {
+    color: #fff;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+/* trailer */
+#divGeneralTrailer{
+    display: none;
+    
+}
+@media (max-width: 767px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    #peliculas,
+    #series,
+    #pelisComedia ,
+    #pelisDocumental,
+    #pelisHistoria,
+    #seriesComedia,
+    #seriesAnimacion{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 10px;
+    }.search{
+        margin-left: 50px;
+    }#description{
+        width: 700px;
+    }
+
+    h4 {
+        width: 150px;
+    }
+
+    #img2,
+    img {
+        height: 300px;
+    }
+
+    #leermas {
+        font-size: 15px;
+        margin-bottom: 12px;
+        width: 300px;
+    }
+
+    #divGeneral {
+        width: calc(25% - 20px); /* Ancho de cada elemento en 25% del contenedor con espaciado */
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        background-color: #121b24;
+    }
+
+    nav .Navegar0,
+    .Navegar1,
+    .Navegar2 {
+        color: #4384a7;
+        width: 200px;
+        background-color: #121b24;
+    }
+
+    .nav-item {
+        background-color: #121b24;
+    }
+
+    #custom-navba {
+        background-color: #121b24;
+    }
+
+    #menu-desplegable {
+        height: 400px;
+        padding-top: 50px;
+        width: 300px;
+        background-color: #121b24;
+    }
+
+    #h4Look {
+        font-size: 15px;
+        margin-right: 50px;
+        width: 100px;
+    }
+
+    #h4pelis,
+    #h4series {
+        margin-left: 40px;
+    }
+}
+
+/* Consulta de medios para tabletas */
+@media (min-width: 768px) and (max-width: 991px) {
+    header img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        padding: 20px;
+        justify-content: flex-end; /* Alinear elementos en la parte inferior */
+    }
+
+    nav button {
+        font-size: 18px;
+    }#menu-desplegable{
+        height: 400px;
+        padding-top: 50px;
+        width: 300px;
+        background-color: #121b24;
+    
+    }
+
+    /* ... estilos específicos para tabletas ... */
+}
+
+/* Consulta de medios para computadoras de escritorio */
+@media (min-width: 992px) {
+    header {
+        position: fixed;
+        display: block;
+        height: 100%;
+        width: 20%;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    nav {
+        padding: 20px;
+        justify-content: flex-end; /* Alinear elementos en la parte inferior */
+    }
+
+    nav button {
+        font-size: 20px;
+    }
+
+    /* ... estilos específicos para computadoras de escritorio ... */
+}
